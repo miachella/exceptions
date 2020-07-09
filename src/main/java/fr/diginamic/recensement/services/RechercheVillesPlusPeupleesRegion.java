@@ -23,7 +23,7 @@ import fr.diginamic.recensement.services.exceptions.ExceptionReg;
 public class RechercheVillesPlusPeupleesRegion extends MenuService {
 
 	@Override
-	public void traiter(Recensement recensement, Scanner scanner) {
+	public void traiter(Recensement recensement, Scanner scanner) throws ExceptionPasConforme, ExceptionReg {
 
 		System.out.println("Veuillez saisir un nom de région:");
 		String nomRegion = scanner.nextLine();
